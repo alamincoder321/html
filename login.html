@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="img/c.png" type="image/x-icon">
+	<title>OTO</title>
+  	<meta name="description" content="Global It Software Savar">
+  	<link rel="stylesheet" href="css/animate.min.css">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="fonts/Linearicons/css/icon.c ss"> -->
+	<link rel="stylesheet" href="fonts/Linearicons/css/i_sif.css">
+	<link href="css/fontawesome.min.css" type= "text/css" rel="stylesheet"/>
+	<link rel="stylesheet" href="css/font-awesome.4.7.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="css/owl.carousel.min.css">  <link rel="stylesheet" href="css/owl_sifat.theme.min.css">
+	<!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="css/sub_menu.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style type="text/css">
+	html {
+	  scroll-behavior: smooth;
+	}
+	</style>
+</head>
+<body class="mb-4">
+	<section class="top">
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+		<div class="row">
+			<div class="col-md-2 col-sm-2 pt-1 logo px_45">
+				<a href="javascript:void(0)">
+	            <img loading="lazy" src="img/Logo.png"  style="width: 94%;
+		            margin: auto;
+		            display: block;
+		            padding: 22px;
+		            height: auto;">
+	            </a>
+			</div>
+
+		 	<!-- Search -->
+			<form class="col-md-2 pt-4" action="#">  
+				<div class="searchBnt">
+					<div class="col-8 col-sm-2"> 
+					    <div class="top_ser">
+							<input class="" type="text"placeholder="Search .....">
+							<div class="cameraIcon">
+								<i class="fas fa-camera"></i>
+								<div class="searchIcon"><i class="fas fa-search"></i></div>
+							</div>
+					    </div>
+					</div>   
+				</div>
+			</form>
+
+			<!-- Right icon -->
+          <div class="rights row col-md-4 mr-5 pt-0 top_i px-0 px-md-2">
+            <div class="col-md-8 row mt-0 px-0 pb-3 pb-md-0 px-md-3  mb-3 mb-md-0 three_i right-icon">
+                <div class="col-4 pt-2 iconContentFirst d-inline">
+                  <a href="javascript:void(0)" class="text-dark px-1">
+                    <p>Compare</p>
+                    <i class="fa fa-balance-scale position-relative"><span class="badge ">0</span> </i>
+                    
+                  </a>
+                </div>
+                <div class="col-4 pt-2 iconContentsecond  d-inline">
+                  <a href="javascript:void(0)" class="text-dark px-1">
+                    <p>My Choice</p>
+                    <i class="fa  position-relative fa-heart-o"> <span class="badge ">1</span> </i>
+                    
+                  </a>
+                </div>
+                <div class="content3 col-4 pt-2 iconContentthird d-inline">
+                  <a href="javascript:void(0)" class="text-dark px-1">
+                    <p>Add to cart</p>
+                    
+                    <i type="button" data-toggle="modal" data-target="#myModal" class="icon-bag2 position-relative"><span class="badge ">2</span> </i>
+                  
+                  </a>
+                </div>
+            </div>
+            <div class="col-9 col-md-4 row m-0 p-md-0 loginRegPartcIcon">
+                <div class=" px-0 pt-4">
+                  <a class="icon-users" href="javascript:void(0)" class=" px-1"> <i class="icon-user" style="margin-left: 50px;"> </i> </a>
+                </div>
+                <div class="pt-3 col-3 fwb loginRegPartContent">
+                  <p> <a href="login.html" style="margin-left: -5px; font-size: 15px;" class=" pb-1">Login </a> </p>
+                  <p> <a href="reg.html" style="margin-left: -5px; font-size: 15px;" class=" pb-1">Register </a> </p>
+                </div>
+            </div>
+            <div class="pb-3 col-3 bt_mob">
+              <a href="javascript:void(0)" class="bt_nav btn btn-dark btn-sm  ml-auto d-block"> <i class="fa fa-bars" style="font-size:15px"></i> </a>
+           </div>
+          </div>
+      </div>
+
+	<!-- PopUp Page Add to Card start code -->
+	 <!-- The Modal -->
+	 <div class="modal addPopUp" id="myModal">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <!-- Modal Header -->
+	        <div class="modal-header bg-primary text-light">
+	          <h5 class="modal-title  m-auto">Add to Card</h5>
+	        </div>
+	          <div class="add_to_card">
+	            <div class="row">
+	              <div class="col-2">
+	                <a id="cart_plus-one"><i class="fas fa-plus"></i> </a>
+	                  <h6 id="card-value-one">1</h6>
+	                <a id="cart_minus-one"><i class="fas fa-minus"></i></a>
+	              </div>
+	                <div class="col-3 d-inline pt-3">
+	                  <img src="img/index.jpg" alt="">
+	                </div>
+	                <div  class=" col-3 d-inline pt-3">
+	                  <p>Dumbbell gym</p>
+	                </div>
+	                <div class="col-2 pt-3">
+	                  <p>Tk <span id="amount-value-one">50</span></p>
+	                </div>
+	                <div class="col-2 pt-3">
+	                  <a href=""> x </a>
+	                </div>
+
+	            </div>
+	          <hr>
+	          <div class="row">
+	            <div class="col-2">
+	              <a  id="cart_plus-two"><i class="fas fa-plus"></i> </a>
+	                <h6 id="card-value-two">1</h6>
+	              <a  id="cart_minus-two"><i class="fas fa-minus"></i></a>
+	            </div>
+	              <div class="col-3 d-inline pt-3">
+	                <img src="img/index.jpg" alt="">
+	              </div>
+	              <div  class=" col-3 d-inline pt-3">
+	                <p>Dumbbell gym</p>
+	              </div>
+	              <div class="col-2 pt-3">
+	                <p>Tk <span id="amount-value-two">50</span></p>
+	              </div>
+	              <div class="col-2 pt-3">
+	                <a href=""> x </a>
+	              </div>
+
+	          </div>
+	        </div>     
+
+	        <script>
+	          $(document).ready(function(){
+	            $('#cart_plus-one').click(function(){
+	              var $input_val = $('#card-value-one').text();
+	              var $value_plus = 1+parseInt($input_val);
+	              $('#card-value-one').text($value_plus);
+	              var $count_amount = 50*$value_plus;
+	              $('#amount-value-one').text($count_amount);
+
+	            });
+	            $('#cart_minus-one').click(function(){
+	              var $input_val = $('#card-value-one').text();
+	              // alert($input_val);
+	              if($input_val > 1){
+	                var $value_minus = $input_val - 1;
+	                $('#card-value-one').text($value_minus);
+	              var $amount = $('#amount-value-one').text();
+	              var $count_amount = $amount - 50;
+	              $('#amount-value-one').text($count_amount);
+
+	              }else{
+	                alert('Minimum Quantity 1');
+	              }
+	              
+	            });
+	            $('#cart_plus-two').click(function(){
+	              var $input_val = $('#card-value-two').text();
+	              var $value_plus = 1+parseInt($input_val);
+	              $('#card-value-two').text($value_plus);
+	              var $count_amount = 50*$value_plus;
+	              $('#amount-value-two').text($count_amount);
+
+	            });
+	            $('#cart_minus-two').click(function(){
+	              var $input_val = $('#card-value-two').text();
+	              // alert($input_val);
+	              if($input_val > 1){
+	                var $value_minus = $input_val - 1;
+	                $('#card-value-two').text($value_minus);
+	              var $amount = $('#amount-value-two').text();
+	              var $count_amount = $amount - 50;
+	              $('#amount-value-two').text($count_amount);
+
+	              }else{
+	                alert('Minimum Quantity 1');
+	              }
+	              
+	            });
+	          });
+	        </script>
+	        <div class="modal-footer">
+	          <div class="bg-light">
+	            <h5><i class="fas fa-chevron-circle-down mr-2"></i>Have a special code ?</h5>
+	            <button class="btn btn-outline-light text-dark">Special code</button>
+	            <button type="button" class="btn btn-danger ml-4">GO</button>
+	          </div>
+	        <button type="button" class="btn btn-primary media" data-dismiss="modal">Close</button>
+	      </div>
+	      <h5 class="ml-2">Shipping 10000 Tk</h5>
+	      <button class="btn btn-info mb-2"> Sub total tk: 10000</button>
+	      <button class="btn btn-info">Place Order</button>
+	    </div>
+	  </div>
+	</div>
+	<!-- PopUp Page Add to Card end code -->
+
+		<!-- nav menu start here -->
+
+        <div class="row menu" id="main_nav" style="padding: 0px 6px;margin-top: 5px;">
+            <a href="index.html" class="home">          
+              <img class="m-auto py-md-0 py-1" loading="lazy" src="img/Home Icon.png" style="width:50px">
+            </a>
+            <ul class="menu p-0 mb-0">              
+  
+              <li class="menu-item-has-children activeHr"><a href="#top">Cardio<i class="fas fa-sort-down"></i></a><span class="sub-toggle"></span>  
+                <ul class="sub-menu px-1"  >
+                  <li><a href="#">Electronic Treadmail</a>
+                  </li>
+                  <li><a href="#">Curved Terminal</a>
+                  </li>
+                  <li><a href="#">Manual Terminal</a>
+                  </li>
+                  <li><a href="#">Eleopion Cross Terminal</a>
+                  </li>
+                  <li><a href="#">Eleopion Cross Terminal</a>
+                  </li>
+                  <li><a href="#">Eleopion Cross Terminal</a>
+                 
+                  </li>                 
+                </ul>  
+                <hr>
+              </li>
+  
+              <li class="menu-item-has-children"><a href="#top">Gym Equipment<i class="fas fa-sort-down"></i> </a><span class="sub-toggle"></span>
+                      
+                <ul class="sub-menu px-1 ">
+                  <li ><a  href="#">Malti Gym</a>
+                  </li>
+                  <li><a href="#">Cable Machine</a>
+                  </li>
+                  <li><a href="#">Plate Loaded Machin</a>
+                  </li>
+                  <li><a href="#">Weight Rack & Power Rack</a>
+                  </li>
+                  <li><a href="#">Weight Bence</a>
+                  </li>
+                  <li><a href="#">Fixed Dubble & Barble</a>
+                  </li>
+                  <li><a href="#">ixed Dubble & Barble</a>
+                  </li>
+                  <li><a href="#">ixed Dubble & Barble</a>
+                  </li>
+                 
+                </ul>
+  
+                <hr>
+              </li>
+              
+              <li class="menu-item-has-children"><a href="#top">Sports & Fitness Goods<i class="fas fa-sort-down"></i> </a><span class="sub-toggle"></span>
+                  
+                <hr>
+              </li>
+              
+              <li class="menu-item-has-children"><a href="#top">Indoor & Outdoor Sports<i class="fas fa-sort-down"></i></a><span class="sub-toggle"></span>
+  
+                <div class="mini-subManu">
+                    <ul class="sub-menu px-1 d-flex" style="width:500px;">
+                      <li><a href="#">Indoor Sports</a><span class="sub-toggle "></span>
+                          
+                              <p class="sum-menu-hover" href="#">Badminton</p>
+                              
+                              <p class="sum-menu-hover" href="#">Chess,Card games & Darts</p>
+                              
+                              <p class="sum-menu-hover" href="#">Basketball, Baseball</p>
+                              
+                              <p class="sum-menu-hover" href="#">Volleyball</p>
+                              
+                              <p class="sum-menu-hover" href="#">Table Tennis, Carrom Board</p>
+                              
+                              <p class="sum-menu-hover" href="#">Boxing</p>
+                              
+                        </li>
+                        
+                        <li><a href="#">Indoor Sports</a><span class="sub-toggle "></span>
+                          
+                            <p class="sum-menu-hover"href="#">Cricket</p>
+                          
+                            <p class="sum-menu-hover" href="#">Football</p>
+                          
+                            <p class="sum-menu-hover"href="#">Swimming</p>
+                          
+                            <p class="sum-menu-hover"href="#">Cycling</p>
+                          
+                            <p class="sum-menu-hover"href="#">LongTennis</p>
+                          
+                            <p class="sum-menu-hover"href="#">Scooter, Skating, Trampoline</p>
+                          
+                            <p class="sum-menu-hover"href="#">Running</p>
+                      </li>            
+                    </ul>
+                </div>
+                  
+                <hr>
+              </li>
+              
+              <li class="menu-item-has-children"><a href="#top">Sports Wear & Shoes<i class="fas fa-sort-down"></i></a><span class="sub-toggle"></span>
+              <div class="mini-subManu">
+                <ul class="sub-menu px-1 d-flex" style="width:500px;">
+                  <li><a href="#">Sports Wear</a><span class="sub-toggle"></span>
+                    
+                      <p class="sum-menu-hover"href="#">Jersey </p>
+                      
+                      <p class="sum-menu-hover"href="#">T-Shirts</p>
+                      
+                      <p class="sum-menu-hover"href="#">Shorts</p>
+                      
+                      <p class="sum-menu-hover"href="#">Sports Bags</p>
+                      
+                      <p class="sum-menu-hover"href="#">Track Suits</p>
+                      
+                      <p class="sum-menu-hover"href="#">Hoodies </p>
+                      
+                      <p class="sum-menu-hover"href="#">Trouser</p>
+                  </li>
+                   <li><a href="#">Sports Shoes</a><span class="sub-toggle"></span>
+            
+                      <p class="sum-menu-hover"href="#">Football Boots</p>
+                      
+                      <p class="sum-menu-hover"href="#"> Cricket Shoes</p>
+                      
+                      <p class="sum-menu-hover"href="#">Running Shoes</p>
+                      
+                      <p class="sum-menu-hover"href="#">Shocks</p>
+                      
+                      <p class="sum-menu-hover"href="#">Other Sports Shoes</p>
+                      
+                   </li>
+                </ul>
+              </div> 
+                <hr>
+              </li>
+  
+              <li class="menu-item-has-children"><a href="#top">Gym Machine Parts<i class="fas fa-sort-down"></i></a><span class="sub-toggle"></span>
+                  <ul class="sub-menu px-1">
+                    <li><a href="#">Treadmill Parts</a>
+                    </li>
+                                  
+                  </ul>
+                <hr>
+              </li>
+  
+              <li class="menu-item-has-children"><a href="#top">Food Supplement<i class="fas fa-sort-down"></i></a><span class="sub-toggle"></span>
+                  
+                <hr>
+              </li>
+  
+              <li class="menu-item-has-children"><a href="#top">Brand<i class="fas fa-sort-down"></i></a><span class="sub-toggle"></span>
+                  
+                <hr>
+              </li>
+  
+              <li class="menu-item-has-children"><a href="#top">Flash Sale</a><span class="sub-toggle"></span>
+                  
+                <hr>
+              </li>
+              
+              <li class="menu-item-has-children"><a href="#top">Contact</a><span class="sub-toggle"></span>
+               
+                <hr>
+              </li>
+              
+              
+            </ul>
+          </div>
+        </div>
+   </section>
+  
+	  <!-- end Top -->
+	<script>
+	  $('.bt_nav').click(function(){
+	     $('#main_nav').slideToggle()
+	  })
+	</script>
+<!------------nav section end here------------------------->
+
+  <section class="loginPage">
+    <div class="row justify-content-center bgLog pb-5 m-0">
+      <div class="col-md-4">
+ 
+     <div class="row m-0 pt-5 mb-3">
+        <a href="#" class="text-dark user_i m-auto text-center"> <i class="icon-user"></i> </a>
+     </div>
+ 
+         <div class="card" style="opacity: 0.6;height: 480px;margin-bottom:90px;">
+             <h5 class="card-header text-center">Login</h5>
+             <div class="card-body">
+                 <form method="" action="">
+                     <div class="mb-4">
+                         <label for="email" class="p-1 col-form-label text-md-right">E-Mail or Phone</label>
+                         <input id="email" type="text" class="form-control form-control-lg" name="email" required autocomplete="email" autofocus >
+                     </div>
+                     <div class="mb-4">
+                         <label for="password" class="p-1 col-form-label text-md-right">Password</label>
+                         <input id="password" type="password" class="form-control form-control-lg" name="password" required autocomplete="current-password">
+                     </div>
+                     <div class="mb-4">
+                         <div class="form-check">
+                             <input class="form-check-input" type="checkbox" name="remember" id="remember">
+                             <label class="form-check-label" for="remember">Remember Me</label>
+                         </div>
+                     </div>
+                     <div class="form-group row mb-4 mb-0">
+                         <button type="submit" class="btn btn-warning btn-lg bg_yl col-12">Login</button>
+                     </div>
+                     <div class="mb-4">
+                      <label for="password" class="p-1 col-form-label text-center d-block" style="cursor:pointer;"><u>Forget Password</u></label>
+                      
+                  </div>
+                 </form>
+             </div>
+         </div>
+      </div>
+    </div>
+ 
+  </section>
+
+<!-- footer part -->
+  <footer class="polka-dot" style="background:#111111;color:#fff">
+    <div class="px-1 pb-md-4 pb-sm-4 pb-3">
+        <div class="row foot">
+          <div class="col-md-4 mt-4 pr-md-4">
+              <div class="px-md-4">
+                <img loading="lazy" src="img/Oto Logo-21.png" class="d-block col-8 ml-5">              
+              </div>
+              <p class="py-2 text-center" style="font-size:13px;color:#d0d0d0;width:100%;">
+                  otosportsbd.com is Popular Online Shopping Site in Bangladesh. 
+                  We Provide Sports & Fitness Accessories Selling in Bangladesh.
+              </p>
+              <div class="row f_email">
+                  
+                    <div class="col-12 mb-3">
+                      <input type="email" class="col-8 form-control d-inline" placeholder="Enter Email Address*">
+                  <button type="submit" class="btn btn-primary col-2 d-inline" style="margin-top: -4px;">Go</button>
+                    </div>
+                  
+              </div>
+                  <div class="row social ml-3 mt-2 animate__animated animate__backInLeft wow data-wow-duration='2s' data-wow-delay='5s' ">
+                      <a class="mr-3 social-facebook" href="weert">
+                        <i class="fa fa-facebook"></i>
+                      </a>
+                      <a class="mr-3 social-teitter" href="weert">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                      <a class="mr-3 social-linkedin" href="weert">
+                        <i class="fa fa-linkedin"></i>
+                      </a>
+                      <a class="mr-3 social-pinterest" href="weert">
+                        <i class="fa fa-pinterest-p"></i>
+                      </a>
+                      <a class="mr-3 social-slideshare" href="weert">
+                        <i class="fab fa-youtube"></i> 
+                      </a>
+                     
+                  </div>
+          </div>
+          <div class="col-md-4 row mt-4">
+            <div class="col-md-6 p-0">
+                <h5 class="font-weight-bold mb-1"  style="font-size: 17px;">About Us</h5>
+                <div class="p-1">
+                   <a href="javascript:void(0)" class="d-block mb-1">About OTO</a>
+                   <a href="javascript:void(0)" class="d-block mb-1">Orders & Delivery</a>
+                   <a href="javascript:void(0)" class="d-block mb-1">Terms & Condtion</a>
+                   <a href="javascript:void(0)" class="d-block mb-1">Our service department</a>
+                   <a href="javascript:void(0)" class="d-block mb-1">Contact Us</a>
+                </div>
+            </div>
+            <div class="col-md-6 p-0">
+                <h5 class="font-weight-bold mb-1" style="font-size: 17px;">Customer Service</h5>
+                <div class="p-1">
+                   <a href="javascript:void(0)" class="d-block mb-1">Return & Refund Policy</a>
+                   <a href="javascript:void(0)" class="d-block mb-1">My Own Account</a>
+                   <a href="javascript:void(0)" class="d-block mb-1">Track My Order</a>
+                   <a href="javascript:void(0)" class="d-block mb-1">EMI Facilities</a>
+                </div>
+            </div>
+            <div class="row col-md-9 p-1 mt-3 mr-0">
+               <a href="img/and.png" class="col-6 p-0">
+                 <img loading="lazy" style="margin-left: -80px;margin-top: 22px;" src="img/Google-Play.png" class="col-12 px-2"> 
+               </a>
+               <a href="img/ap.png" class="col-6 p-0">
+                 <img loading="lazy" style="margin-left: -95px;margin-top: 22px;" src="img/Apple-.png" class="col-12 px-2"> 
+               </a>
+              
+            </div>
+              
+          </div>
+            <div class="col-md-4 mt-4">
+                <h5 class="font-weight-bold mb-1" style="font-size: 17px;">Address</h5>
+                <div class="p-1 row">
+                  <div class="col-1 p-0 mt-1 pt-1 addIconMap">
+                    <i class="fa fa-map-marker"></i> 
+                  </div>
+                  <div class="col-11 pr-0 mapcontent">
+                    <a href="javascript:void(0)" class="">Aricha Road, Savar Bus-stand (East side) Beside Rana Plaza, 
+                      Opposite Monsur Market, Savar, Dhaka, Bangladesh</a>
+                  </div>
+                </div>
+                <div class="p-1 row">
+                  <div class="col-1 p-0 mt-1 pt-1 addIconPhone">
+                    <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <div class="col-11 pr-0 numbercontent">
+                    <a href="javascript:void(0)" class="">01976292926</a>
+                  </div>
+                  </div>
+                <div class="p-1 row">
+                  <div class="col-1 p-0 mt-1 pt-1 addIconMail">
+                    <i class="fa fa-envelope "></i> 
+                  </div>
+                  <div class="col-11 pr-0 pb-3 mailcontent">
+                    <a href="javascript:void(0)" class="">otosportsbd@gmail.com</a>
+                  </div>
+                </div>
+                <div class="masterCard d-inline">
+                  <a href="" class="d-inline"><img src="img/1.jpg" alt="" style="height: 50px;margin-bottom:10px;margin-right:5px"> </a>
+                  <a href="" class="d-inline"><img src="img/2.jpg" alt="" style="height: 50px;margin-bottom:10px;margin-right:5px"> </a>
+                  <a href="" class="d-inline"><img src="img/3.jpg" alt="" style="height: 50px;margin-bottom:10px;margin-right:5px"> </a>
+                  <a href="" class="d-inline"><img src="img/4.jpg" alt="" style="height: 50px;margin-bottom:10px;margin-right:5px"> </a>
+                  <a href="" class="d-inline"><img src="img/5.jpg" alt="" style="height: 50px;margin-bottom:10px;margin-right:5px"> </a>
+                  <a href="" class="d-inline"><img src="img/1.jpg" alt="" style="height: 50px;margin-right:5px"> </a>
+                  <a href="" class="d-inline"><img src="img/2.jpg" alt="" style="height: 50px;margin-right:5px"> </a>
+                  <a href="" class="d-inline"><img src="img/3.jpg" alt="" style="height: 50px;margin-right:5px"> </a>
+                  <a href="" class="d-inline"><img src="img/4.jpg" alt="" style="height: 50px;margin-right:5px"> </a>
+                  <a href="" class="d-inline"><img src="img/5.jpg" alt="" style="height: 50px;margin-right:5px"> </a>
+                 
+              </div>
+          </div>
+
+        </div>
+    </div>
+  </footer>
+
+<!-- <script src="js/jquery_3.5.1.js"></script>    -->
+<script src="https://kit.fontawesome.com/d3e30fd547.js" crossorigin="anonymous"></script>
+<script src="img_css_js/jquery-2.2.3.min.js"></script>   
+<script src="js/bootstrap_4.5.2.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jssor.slider-28.1.0.min.js" type="text/javascript"></script>
+<script id="bs-live-reload" data-sseport="4859" data-lastchange="1530918619334" src="/js/livereload.js"></script>
+    <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+    <!-- // Swipe Button end -->
+
+</body>
+</html>

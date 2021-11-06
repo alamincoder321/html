@@ -1,0 +1,22 @@
+
+/* Default styles first then media queries */
+@media screen and (min-width: 384px)  {
+    .top_ser input {
+        padding: 13px 54px;
+        border: 1px solid #000;
+        border-radius: 60px;
+        text-align: center;
+        font-size: 20px;
+        margin: 0px 6px 0px 14px;
+    } 
+    .cameraIcon .searchIcon {
+        margin-left: -283px;
+        margin-top: -50px;
+    }
+    
+    
+
+    .cards {
+        margin-right: 68px !important;
+    }
+}
