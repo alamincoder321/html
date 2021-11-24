@@ -60,7 +60,7 @@
 } */
 .menu .mini-subManu p{
     font-size:15px;
-    padding: 8px;
+    padding: 0px 24px;
 }
 
 
@@ -102,10 +102,9 @@
 .menu > li.menu-item-has-children > .home::before{display:none}
 .menu > li.menu-item-has-children > .home::after{display:none}
 .last_sub{left:-93%}
-.bt_mob{display:none}
 
 @media only screen and (max-width:600px){
-.menu .home{padding:5px 12px 5px 11px}.bt_mob{display:block}#main_nav{display:none}
+.menu .home{padding:5px 12px 5px 11px}.bt_mob{display:block}
 .menu > li .top_one{padding:13px 17px 13px 10px !important}.menu > li{display:block;}
 .menu > li a{padding:13px 17px 13px 10px;font-weight:600;width:100%;border-bottom:1px solid #d2a325}
 .menu > li.menu-item-has-children > a::after{right:30px}
